@@ -19,6 +19,6 @@ const characterSchema = new Schema({
     }
 });
 
-const characterModel = model("Character", userSchema);
+const characterModel = model("Character", characterSchema);
 
 export default characterModel;

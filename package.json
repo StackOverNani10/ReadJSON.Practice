@@ -1,0 +1,24 @@
+{
+  "name": "readjson.practice",
+  "version": "1.0.0",
+  "description": "This is a practice from collage",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StackOverNani10/ReadJSON.Practice.git"
+  },
+  "author": "Daniel Domínguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StackOverNani10/ReadJSON.Practice/issues"
+  },
+  "homepage": "https://github.com/StackOverNani10/ReadJSON.Practice#readme",
+  "dependencies": {
+    "mongoose": "^6.8.0"
+  }
+}
