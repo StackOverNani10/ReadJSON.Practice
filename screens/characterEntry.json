@@ -1,0 +1,38 @@
+{
+    "id": "characterEntry",
+    "maxCol": 80,
+    "title": "Captura de caracteres",
+    "message": "Gracias Por escoger un caracter!!!",
+    "fields": [
+      { 
+      "name": {
+        "label": "Nombres",
+        "value": "Herald",
+        "required": true,
+        "messages": "El nombre es requerido"
+      }, 
+      "apellido": {
+        "label": "Apellidos",
+        "value": "Jumping",
+        "required": true,
+        "messages": "El apellido es requerido"
+      },
+      "puntaje": {
+        "label": "Puntaje",
+        "value": "88",
+        "required": true,
+        "messages": "El puntaje es requerido"
+      },
+      "habilidad": {
+        "label": "Habilidad",
+        "value": "Super Salto",
+        "required": true,
+        "messages": "La habilidad es requerida"
+      }
+      }
+    ],
+    "actions": [
+      { "name": "save", "option": "G", "handler": "Program.Save", "succ": "characterEntry", "fail": "characterEntryFailure" },
+      { "name": "cancel", "option": "C", "handler": "Program.Cancel", "succ": "EXIT!", "fail": "EXIT!" }
+    ]
+  }
