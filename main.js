@@ -1,18 +1,18 @@
 import characterModel from "./models/character.js";
+import fs from "fs";
+import path from "path"
 
-/*
-fetch("../screens/characterEntry.json")
-  .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
-  .then(data => console.log(data));
-*/
+const pathJSON = path.join('./screens/characterEntry.json');
 
-const nombres = "Herald";
-const apellidos = "Jumping";
-const puntuacion = "88";
-const habilidad = "Super Salto";
+const readJSON = () => {
+  const data = fs.readFileSync(pathJSON, 'utf-8');
+  return JSON.parse(data);
+};
 
-const newCharacter = new characterModel({nombres, apellidos, puntuacion, habilidad});
+const writeJSON = (data) => {
+  fs.writeFileSync(pathJSON, data);
+};
 
-const data = newCharacter[nombres];
+const data = readJSON();
 
 console.log(data);
