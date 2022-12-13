@@ -1,0 +1,10 @@
+{
+    "id": "characterEntryFailure",
+    "maxCol": 80,
+    "title": "Error en captura de caracteres",
+    "message": "No se pudo agregar el caracter!!",
+    "actions": [
+        { "name": "return", "option": "R", "handler": "Program.Return", "succ": "characterEntry", "fail": "characterEntryFailure" },
+        { "name": "leave", "option": "L", "handler": "Program.Close", "succ": "EXIT!", "fail": "EXIT!" }
+      ]
+}

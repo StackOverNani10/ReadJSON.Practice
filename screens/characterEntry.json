@@ -7,25 +7,25 @@
       { 
       "name": {
         "label": "Nombres",
-        "value": "Herald",
+        "value": "",
         "required": true,
         "messages": "El nombre es requerido"
       }, 
       "apellido": {
         "label": "Apellidos",
-        "value": "Jumping",
+        "value": "",
         "required": true,
         "messages": "El apellido es requerido"
       },
       "puntaje": {
         "label": "Puntaje",
-        "value": "88",
+        "value": "",
         "required": true,
         "messages": "El puntaje es requerido"
       },
       "habilidad": {
         "label": "Habilidad",
-        "value": "Super Salto",
+        "value": "",
         "required": true,
         "messages": "La habilidad es requerida"
       }
